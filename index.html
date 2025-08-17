@@ -28,7 +28,12 @@
     .thumbs{display:grid;gap:10px;margin-top:10px} @media(min-width:720px){.thumbs{grid-template-columns:repeat(3,1fr)}}
     .thumbs img{width:100%;height:150px;object-fit:cover;border-radius:10px;border:1px solid #24365e;background:#0c1427}
     footer{padding:22px 0;color:var(--muted);font-size:14px}
-  </style>
+
+     /* Project bullet point spacing */
+     ul.clean { padding-left: 18px; margin: 8px 0; }
+     ul.clean li { margin: 4px 0; }
+
+    </style>
 </head>
 <body>
 <div class="wrap">
@@ -44,49 +49,115 @@
     </div>
   </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Master’s in Computer Science (University of Bridgeport). I turn raw data into KPI dashboards and clear, actionable insights using SQL, Power BI, and Python.</p>
-  </section>
+  <!-- ===== About ===== -->
+<section id="about">
+  <h2>About</h2>
+  <p>
+    I’m a Data Analyst with a Master’s in Computer Science (University of Bridgeport) and hands-on
+    experience in SQL, Power BI, and Python. I build interactive dashboards, analyze business
+    performance, and turn raw data into clear, actionable insights. I enjoy KPI design, time-series
+    analysis, and data storytelling—helping teams make faster, data-driven decisions.
+  </p>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card grid grid--2">
-      <div>
-        <h3>Retail Sales Dashboard (Power BI + SQL + Python)</h3>
-        <p>Analyzed category, state, and monthly performance; built KPIs (Sales, Profit, Margin %, Orders, AOV) and delivered a dashboard for quick decisions.</p>
-        <ul>
-          <li><strong>Impact:</strong> Found revenue concentration by state and margin differences by category; suggested regional targeting and off-peak promos.</li>
-          <li><strong>Stack:</strong> Power BI (DAX, Date table), SQL, Python (pandas) for validation & trends.</li>
-        </ul>
-        <p><a class="btn btn--accent" href="https://github.com/lokeshp31/data-analyst-portfolio" target="_blank" rel="noopener">View on GitHub</a></p>
-      </div>
-      <div>
-        <div class="thumbs">
-          <a href="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_state.png" target="_blank" rel="noopener">
-            <img alt="Sales by State" src="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_state.png">
-          </a>
-          <a href="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_category.png" target="_blank" rel="noopener">
-            <img alt="Sales by Category" src="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_category.png">
-          </a>
-          <a href="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/monthly_sales_trend.png" target="_blank" rel="noopener">
-            <img alt="Monthly Sales Trend" src="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/monthly_sales_trend.png">
-          </a>
-        </div>
+  <!-- Secondary resume CTA (keeps recruiters from scrolling back up) -->
+  <p style="margin-top:14px">
+    <a class="btn" href="files/Lokesh_Potluri_Resume.pdf" target="_blank" rel="noopener">📄 Download Resume</a>
+  </p>
+</section>
+
+<!-- ===== Projects ===== -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <!-- Project 1 -->
+  <div class="card project grid grid--2">
+    <div>
+      <h3>Retail Sales Dashboard (Power BI + SQL + Python)</h3>
+      <p>
+        Analyzed category, state, and monthly performance; built KPIs (Sales, Profit, Margin %,
+        Orders, AOV); delivered an executive dashboard for quick decisions.
+      </p>
+      <ul class="clean">
+        <li><strong>Impact:</strong> Found revenue concentration by state and margin differences by category; recommended regional targeting and off-peak promos.</li>
+        <li><strong>Stack:</strong> Power BI (DAX, Date table), SQL, Python (pandas) for validation & trends.</li>
+      </ul>
+      <p><a class="btn btn--accent" href="https://github.com/lokeshp31/data-analyst-portfolio" target="_blank" rel="noopener">View on GitHub</a></p>
+    </div>
+    <div>
+      <div class="thumbs">
+        <a href="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_state.png" target="_blank" rel="noopener">
+          <img alt="Sales by State" src="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_state.png">
+        </a>
+        <a href="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_category.png" target="_blank" rel="noopener">
+          <img alt="Sales by Category" src="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_category.png">
+        </a>
+        <a href="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/monthly_sales_trend.png" target="_blank" rel="noopener">
+          <img alt="Monthly Sales Trend" src="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/monthly_sales_trend.png">
+        </a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:YOUR.EMAIL@EXAMPLE.COM">lokeshpotluri314@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/lokeshpotluri" target="_blank" rel="noopener">linkedin.com/in/lokeshpotluri</a></p>
+  <!-- Project 2 -->
+  <div class="card project grid grid--2">
+    <div>
+      <h3>Customer Churn Insights (Python + SQL)</h3>
+      <p>
+        Built a churn analysis workflow to identify at-risk customers and drivers of churn.
+        Performed EDA in pandas, engineered features (tenure, complaints, plan type), and used
+        simple classification (logistic baseline) to score churn risk.
+      </p>
+      <ul class="clean">
+        <li><strong>Impact:</strong> Prioritized retention actions by segment; surfaced top 5 churn drivers for business teams.</li>
+        <li><strong>Stack:</strong> Python (pandas, matplotlib), SQL for extraction & cleaning.</li>
+      </ul>
+      <p><a class="btn" href="https://github.com/lokeshp31/data-analyst-portfolio" target="_blank" rel="noopener">View analysis notes</a></p>
     </div>
-  </section>
+    <div>
+      <div class="thumbs">
+        <!-- Replace these three images with your churn charts if you have them -->
+        <img alt="Churn EDA" src="https://dummyimage.com/600x400/0c1427/e7eefc&text=Churn+EDA">
+        <img alt="Feature Importance" src="https://dummyimage.com/600x400/0c1427/e7eefc&text=Feature+Importance">
+        <img alt="Segment Risk" src="https://dummyimage.com/600x400/0c1427/e7eefc&text=Segment+Risk">
+      </div>
+    </div>
+  </div>
 
-  <footer>© <span id="y"></span> Lokesh Potluri • GitHub Pages</footer>
-</div>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
+  <!-- Project 3 -->
+  <div class="card project grid grid--2">
+    <div>
+      <h3>Financial Performance Dashboard (Power BI + SQL)</h3>
+      <p>
+        Designed a CFO-style dashboard tracking revenue, expenses, and profitability with monthly
+        trends and YoY comparisons. Modeled a star schema and wrote DAX for Gross Margin %, Run-rate,
+        and Variance vs. Plan.
+      </p>
+      <ul class="clean">
+        <li><strong>Impact:</strong> Highlighted cost overruns and underperforming regions; supported budget re-allocation decisions.</li>
+        <li><strong>Stack:</strong> Power BI (DAX, relationships), SQL for data prep and scheduled extracts.</li>
+      </ul>
+      <p><a class="btn" href="https://github.com/lokeshp31/data-analyst-portfolio" target="_blank" rel="noopener">See notes & DAX</a></p>
+    </div>
+    <div>
+      <div class="thumbs">
+        <!-- Replace these placeholders with screenshots if you have them -->
+        <img alt="P&L Overview" src="https://dummyimage.com/600x400/0c1427/e7eefc&text=P%26L+Overview">
+        <img alt="Margin by Region" src="https://dummyimage.com/600x400/0c1427/e7eefc&text=Margin+by+Region">
+        <img alt="YoY Trend" src="https://dummyimage.com/600x400/0c1427/e7eefc&text=YoY+Trend">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:lokeshpotluri314@gmail.com">lokeshpotluri314@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/lokeshpotluri" target="_blank" rel="noopener">linkedin.com/in/lokeshpotluri</a></p>
+    <p>GitHub: <a href="https://github.com/lokeshp31" target="_blank" rel="noopener">github.com/lokeshp31</a></p>
+    <p style="margin-top:10px"><a class="btn" href="files/Lokesh_Potluri_Resume.pdf" target="_blank" rel="noopener">📄 Download Resume</a></p>
+  </div>
+</section>
+
+    
