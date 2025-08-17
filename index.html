@@ -1,5 +1,91 @@
-<!doctype html>
-<title>Lokesh Potluri — Data Analyst Portfolio</title>
-<h1>Hello from Lokesh 👋</h1>
-<p>This site is live. I’ll add my portfolio next.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lokesh Potluri — Data Analyst Portfolio</title>
+  <meta name="description" content="Data Analyst skilled in SQL, Power BI, and Python. Portfolio projects with dashboards, KPIs, and business insights." />
+  <meta property="og:title" content="Lokesh Potluri — Data Analyst Portfolio" />
+  <meta property="og:description" content="SQL • Power BI • Python | Retail analytics dashboard and end-to-end projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lokeshp31.github.io" />
+  <style>
+    :root{--bg:#0b1220;--card:#121a2a;--muted:#9fb0d3;--text:#e7eefc;--accent:#66b3ff}
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{opacity:.9}
+    .wrap{max-width:980px;margin:auto;padding:32px 20px}
+    header{padding:36px 0 10px;border-bottom:1px solid #1f2b45}
+    h1{font-size:40px;margin:0}
+    .sub{color:var(--muted)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid #2a3a5f;background:#17213b;color:#e7eefc}
+    .btn--accent{background:var(--accent);border-color:var(--accent);color:#041225;font-weight:600}
+    section{padding:28px 0;border-bottom:1px solid #1f2b45}
+    h2{font-size:26px;margin:0 0 8px}
+    .card{background:#121a2a;border:1px solid #1f2b45;border-radius:14px;padding:18px}
+    .grid{display:grid;gap:18px} @media(min-width:880px){.grid--2{grid-template-columns:1fr 1fr}}
+    .thumbs{display:grid;gap:10px;margin-top:10px} @media(min-width:720px){.thumbs{grid-template-columns:repeat(3,1fr)}}
+    .thumbs img{width:100%;height:150px;object-fit:cover;border-radius:10px;border:1px solid #24365e;background:#0c1427}
+    footer{padding:22px 0;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Lokesh Potluri</h1>
+    <div class="sub">Data Analyst — SQL • Power BI • Python</div>
+    <div class="cta">
+      <a class="btn btn--accent" href="https://github.com/lokeshp31/data-analyst-portfolio" target="_blank" rel="noopener">View GitHub Portfolio</a>
+      <a class="btn" href="https://linkedin.com/in/lokeshpotluri" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:YOUR.EMAIL@EXAMPLE.COM">Email</a>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+    </div>
+  </header>
 
+  <section id="about">
+    <h2>About</h2>
+    <p>Master’s in Computer Science (University of Bridgeport). I turn raw data into KPI dashboards and clear, actionable insights using SQL, Power BI, and Python.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card grid grid--2">
+      <div>
+        <h3>Retail Sales Dashboard (Power BI + SQL + Python)</h3>
+        <p>Analyzed category, state, and monthly performance; built KPIs (Sales, Profit, Margin %, Orders, AOV) and delivered a dashboard for quick decisions.</p>
+        <ul>
+          <li><strong>Impact:</strong> Found revenue concentration by state and margin differences by category; suggested regional targeting and off-peak promos.</li>
+          <li><strong>Stack:</strong> Power BI (DAX, Date table), SQL, Python (pandas) for validation & trends.</li>
+        </ul>
+        <p><a class="btn btn--accent" href="https://github.com/lokeshp31/data-analyst-portfolio" target="_blank" rel="noopener">View on GitHub</a></p>
+      </div>
+      <div>
+        <div class="thumbs">
+          <a href="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_state.png" target="_blank" rel="noopener">
+            <img alt="Sales by State" src="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_state.png">
+          </a>
+          <a href="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_category.png" target="_blank" rel="noopener">
+            <img alt="Sales by Category" src="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/sales_by_category.png">
+          </a>
+          <a href="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/monthly_sales_trend.png" target="_blank" rel="noopener">
+            <img alt="Monthly Sales Trend" src="https://raw.githubusercontent.com/lokeshp31/data-analyst-portfolio/main/data-analyst-portfolio/PowerBI-Dashboards/retail_sales/monthly_sales_trend.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:YOUR.EMAIL@EXAMPLE.COM">YOUR.EMAIL@EXAMPLE.COM</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/lokeshpotluri" target="_blank" rel="noopener">linkedin.com/in/lokeshpotluri</a></p>
+    </div>
+  </section>
+
+  <footer>© <span id="y"></span> Lokesh Potluri • GitHub Pages</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
